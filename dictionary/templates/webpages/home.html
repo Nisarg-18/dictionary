@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+
+ <!-- heading starts -->
+ <section class="p-5">
+    <div class="container text-center">
+      <h2>
+        Search any <span class="text-primary">word</span> and get it's
+        <span class="text-primary">meaning!</span>
+      </h2>
+    </div>
+  </section>
+
+  <!-- heading ends -->
+
+  <!-- form starts -->
+  <section class="p-5">
+    <div class="container w-50">
+      <form action="">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter the word here"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn btn-primary"
+            type="submit"
+            id="button-addon2"
+          >
+            Search
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- form ends -->
+
+{% endblock %}
