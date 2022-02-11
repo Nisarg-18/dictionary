@@ -16,10 +16,11 @@
   <!-- form starts -->
   <section class="p-5">
     <div class="container w-50">
-      <form action="">
+      <form action="{% url 'result' %}" method="GET">
         <div class="input-group mb-3">
           <input
             type="text"
+            name="word"
             class="form-control"
             placeholder="Enter the word here"
             aria-label="Recipient's username"
