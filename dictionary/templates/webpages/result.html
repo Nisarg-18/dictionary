@@ -1,23 +1,21 @@
-{% extends 'base.html' %}
-{% block content %}
-    <!-- heading starts -->
-    <section class="p-5">
-      <div class="container text-center">
-        <h4 class="p-2">
-         You searched for: <span class="text-primary">{{ word }}</span>
-        </h4>
-        <p>
-            Meaning: {{ meaning }}
-        </p>
-        <p>
-            Synonyms: {{ synonyms }}
-        </p>
-        <p>
-            Antonyms: {{ antonyms }}
-        </p>
-      </div>
-    </section>
+{% extends 'base.html' %} {% block content %}
+<!-- heading starts -->
+<section class="p-5">
+  <div class="container text-center">
+    <h4 class="p-2">
+      You searched for: <span class="text-primary">{{ word }}</span>
+    </h4>
+    <p>Meaning: {{ meaning }}</p>
+  </div>
+</section>
 
-    <!-- heading ends -->
+<!-- heading ends -->
+<section>
+  <div class="container text-center">
+    <a href="{% url 'home' %}">
+      <div class="btn btn-primary">Search Again</div>
+    </a>
+  </div>
+</section>
 
 {% endblock %}
